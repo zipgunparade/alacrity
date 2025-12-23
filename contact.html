@@ -8,8 +8,13 @@
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Gabarito:wght@400..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Gabarito:wght@400..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
+<link rel="shortcut icon" href="images/alacrityicon.png">
+<link rel="icon" type="imgage/png" sizes="32x32" href="images/alacrityicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/alacrityicon.png">
+<link rel="icon" sizes="192x192" href="images/alacrityicon.png">
+	
 	
 	<style>
 		h1 {
@@ -25,8 +30,8 @@
 		
 		input[type=text], input[type=email], input[type=tel], textarea  {
 			width: 100%;
-			padding: 12px;
-			margin: 10px 0;
+			padding: 10px;
+			margin: 5px 0;
 			box-sizing: border-box;
 			border: 2px solid #000;
 			border-radius: 5px;
@@ -35,7 +40,7 @@
 		.form-grid {
 			  border: 5px solid;
 			  padding: 5px 20px; 
-			  width: 50%;
+			  width: 45%;
 			  overflow: auto;
 			  margin: auto;
 			  background: #FFF;
@@ -49,13 +54,36 @@
 			  background-color: #F2A30F;
 			  border: 2px solid #000;
 			  color: white;
-			  padding: 15px 35px;
+			  padding: 10px 35px;
 			  text-decoration: none;
 			  margin: 5px 37%;
 			  cursor: pointer;
 			  border-radius: 10px;
 		}
+		
+<!-- Use this class to change paragraph fonts -->		
+		.outfit-about {
+		  font-family: "Outfit", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-size: 1.5em;
+		}
+		
+		footer {
+		  padding-bottom: 10px;
+		  padding-top: 10px;
+		  font-weight: 400;
+		  font-style: normal;
+		  font-size: .5em;
+		  width: 80%;
+		  margin: auto;
+		}
 
+		footer a {
+			color: #000;
+		}					
+		
 	</style>
 <link href="css/bootstrap-5.3.8.css" rel="stylesheet" type="text/css">
 </head>
@@ -63,13 +91,19 @@
 <body style="padding-top: 70px">
 	
 	
-<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #c8e8ea;"> <a class="navbar-brand" href="#"><img src="images/alacrityicon.png" alt="Alacrity logo"> With Alacrity Hospitality</a>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #c8e8ea;"> <a class="navbar-brand" href="index.html"><img src="images/alacrityicon.png" alt="Alacrity logo"> With Alacrity Hospitality</a>
 	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 	    <ul class="navbar-nav me-auto">
 			
 	      <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="visually-hidden">(current)</span></a> </li>
 			
+
+	      <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+	
+						
+	      <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+		
 	      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
 				
@@ -83,12 +117,8 @@
 	        
 				<a class="dropdown-item" href="http://thealbionmanor.com" target="_blank">The Albion Manor</a> </div>
           </li>
-			
-	      <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
-	
 						
-	      <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
-		
+			
         </ul>
 
   </div>
@@ -97,18 +127,18 @@
 		<div id="contactform">		
 			<form class="form-grid" action="https://api.web3forms.com/submit" method="POST"><!-- Start Form-->
 							<fieldset>
-								<legend><h2>LET'S GET IN TOUCH:</h2></legend>
+								<legend><h2 style="padding-top: 10px">LET'S GET IN TOUCH:</h2></legend>
 								<input type="hidden" name="access_key" value="e2648d34-67d8-402e-a9e6-d795d428d0ad">
-								
+					<label for="fName">First Name:</label>
 								<input type="text" name="First Name" id="fName" placeholder="First Name" required>
-
+					<label for="lName">Last Name:</label>
 								<input type="text" name="Last Name" id="lName" placeholder="Last Name" required>
-
-								<input type="email" name="E-mail" id="email" placeholder="E-mail Address: you@domain.com" required>
-
-								<input type="tel" id="phone" name="Phone Number" placeholder="Phone Number (123) 456-7890">
-
-								<input type="text" id="textarea" name="Message" placeholder="How may I help you?" required> 
+					<label for="email">E-mail Address:</label>
+								<input type="email" name="E-mail" id="email" placeholder="you@domain.com" required>
+					<label for="phone">Phone Number:</label>
+								<input type="tel" id="phone" name="Phone Number" placeholder="(123) 456-7890" required>
+					<label for="textarea">How may we help you?:</label>
+								<input type="text" id="textarea" name="Message" placeholder="" required style="height:150px"> 
 							</fieldset>
 
 							<input type="submit" id="submit" value="Submit" class="btn">
@@ -119,4 +149,11 @@
 <script src="js/popper-2.11.8.min.js"></script>
 <script src="js/bootstrap-5.3.8.js"></script>
 </body>
+	
+		
+	<footer>
+	
+	</footer>
+		
+	
 </html>
