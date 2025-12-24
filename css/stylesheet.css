@@ -96,7 +96,7 @@ File Name: stylesheet.css
 		.form-grid {
 			  border: 5px solid;
 			  padding: 5px 20px; 
-			  width: 80%;
+			  width: 75%;
 			  overflow: auto;
 			  margin: auto;
 			  background: #FFF;
@@ -110,7 +110,7 @@ File Name: stylesheet.css
 			  background-color: #F2A30F;
 			  border: 2px solid #000;
 			  color: white;
-			  padding: 10px 35px;
+			  padding: 10px 30px;
 			  text-decoration: none;
 			  margin: 5px 37%;
 			  cursor: pointer;
